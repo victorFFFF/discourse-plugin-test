@@ -1,7 +1,7 @@
 export default {
-  resource: 'admin.adminPlugins',
-  path: '/plugins',
-  map() {
-    this.route('purple-tentacle');
-  }
-};
+    resource: 'admin.adminPlugins',
+    path: '/plugins',
+    map() {
+      this.route('purple-tentacle');
+    }
+  };

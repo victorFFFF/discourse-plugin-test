@@ -7,5 +7,5 @@
 add_admin_route 'purple_tentacle.title', 'purple-tentacle'
 
 Discourse::Application.routes.append do
-  get '/admin/plugins/purple-tentacle' => 'admin/plugins#index'
+  get '/admin/plugins/purple-tentacle' => 'admin/plugins#index', constraints: StaffConstraint.new
 end
